@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF8">
+		<meta name="viewport" 
+			  content="width=device-width, initial-scale=1.0">
+		<title>Select Relatives</title>
+		<!--Internal Syle Sheet place holder-->
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<style>
+            /* All descendants at ANY level */
+            div.container p { color: red; background: yellow;}
+            /* Child of direct parent */
+            div.container > p { background: blue;}
+            /* sibling immediately after */
+            h3 + div { border: 2px solid green;}
+            /* all elements that follow */
+            h3 ~ div { border: 2px dotted magenta;}
+		</style>
+	</head>
+	<body>
+		<h3>Heading 3</h3>
+        <div>Content</div> <div>More content</div>
+        <div class="container">
+            <p>Para 1</p> <p>Para 2</p>
+            <aside> <p>Para 3</p></aside>
+        </div>
+	</body>
+</html>
