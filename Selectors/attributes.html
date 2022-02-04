@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF8">
+		<meta name="viewport" 
+			  content="width=device-width, initial-scale=1.0">
+		<title>Apply Style</title>
+		<!--Internal Syle Sheet place holder-->
+		<style>
+            ol[id] { border: 2px solid red;}
+            li[class="reptile"] {background:red;}
+            li[class~="animal"] {background: #800080}
+            li[class|="cat"] {background:green;}
+            li[class~="sea"] {background: blue;}
+            li[class*="estic"] {background: magenta;}
+            li[class^="top"] {background: yellow;}
+            li[class$="ird"] {background:peru;}
+		</style>
+	</head>
+	<body>
+        <ol id="animal-list">
+            <li class="reptile">Alligator</li>
+            <li class="domestic animal">Dog</li>
+            <li class="animal wild">Tiger</li>
+            <li class="cat-family">Lion</li>
+            <li class="sea fish">Barracuda</li>
+            <li class="topcat">Cartoon</li>
+            <li class="dome bird">Budgerigar</li>
+        </ol>
+	</body>
+</html>
