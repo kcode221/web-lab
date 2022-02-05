@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF8">
+		<meta name="viewport" 
+			  content="width=device-width, initial-scale=1.0">
+		<title>Display Inline</title>
+		<!--Internal Syle Sheet place holder-->
+		<style>
+            ul { border: 2px solid red;}
+            ul > li {background:darkturquoise; margin:10px;
+                    padding:5px;width:100px;height:20px;}
+
+            ul.block > li {display:block;}
+            ul.inline > li {display:inline;}
+            ul.inline-block > li {display:inline-block;}
+		</style>
+	</head>
+	<body>
+        <h2>Display inline</h2>
+        <ul class="block"><li>Block</li><li>Block</li><li>Block</li></ul>
+        <ul class="inline"><li>Inline</li><li>Inline</li><li>Inline</li></ul>
+        <ul class="inline-block"><li>Inline Block</li><li>Inline Block</li><li>Inline Block</li></ul>
+	</body>
+</html>
